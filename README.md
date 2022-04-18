@@ -36,14 +36,18 @@
             .model(value)
             .style({width:200})
 
-    // @stage2 启用@语法标识 代替函数式传参 
-    // @Comp(){}.config() @<组件名>(<数据>){<子组件>}.<配置项>
-        @Comp(model=value){
-            @A().size()
-            @B()
-        }   
-        .frame({width:200})
-    
+    // @stage2 启用{}语法 
+        // Comp{
+        //     const [size,setSize] = useState(2)
+        //     A()
+        //         .size(size)
+        //         .onClick(()=>{setSize(size++)})
+        //     B()
+        //     Flex{
+        //         const []
+        //     }
+        // }   
+        // .frame({width:200})
 ```
 ## 生成可调用的函数组件
 - 通过全局方法 *createCompProxy*
