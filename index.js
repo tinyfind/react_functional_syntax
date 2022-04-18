@@ -11,7 +11,7 @@ const Div = generateCompClass('div')
 function updateFunctionComp(materials, prevStr) {
 	// 针对首字母大写的key
 	Object.keys(materials).filter(compName => compName[0].charCodeAt() <= 90 && compName[0].charCodeAt() >= 60).forEach(compName => {
-		updateFunctionComp(materials[compName], compName)
+		updateFunctionComp(materials[compName], prevStr+compName)
 		Object.defineProperty(this, `${prevStr}${compName}`, {
 			value: createCompProxy(materials[compName])
 		})
