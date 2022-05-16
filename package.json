@@ -1,16 +1,40 @@
 {
-  "name": "study",
+  "name": "webpack-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --mode=development --watch",
+    "serve": "webpack-dev-server --mode=development --open",
+    "build": "webpack --mode=production"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "antd": "^4.19.5",
-    "lodash": "^4.17.21"
-  }
+    "antd": "^4.20.2",
+    "astring": "^1.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@vue/compiler-sfc": "^3.2.31",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "escodegen": "^2.0.0",
+    "espree": "^9.3.1",
+    "esprima": "^4.0.1",
+    "estraverse": "^5.3.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "author": "",
+  "license": "ISC"
 }
