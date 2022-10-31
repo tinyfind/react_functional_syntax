@@ -1,8 +1,8 @@
 # react_functional_syntax
 - A new syntax to instead jsx
 - 函数声明式
-- 箭头函数尾调用
-### 箭头函数尾调用
+- 箭头函数尾闭包
+### 箭头函数尾闭包
 ```javascript
     // 下面两个方法的调用同效
     // 尾调用函数默认传参 ...args
